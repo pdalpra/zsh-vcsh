@@ -1,0 +1,5 @@
+*
+!/.gitignore.d
+!/.gitignore.d/zsh
+!/.bin/
+!/.bin/new_sub
