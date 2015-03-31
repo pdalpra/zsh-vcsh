@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+UNAME=$(uname)
+declare OS
+
+if [[ $UNAME == "Darwin" ]]; then
+	OS="OSX"
+fi
+
+echo "export OS=$OS"

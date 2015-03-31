@@ -1,14 +1,3 @@
-##################
-#  OS Detection  #
-##################
-
-UNAME=$(uname)
-declare OS
-
-if [[ $UNAME == "Darwin" ]]; then
-	OS="OSX"
-fi
-
 ###################
 #  Antigen setup  #
 ###################
@@ -17,6 +6,7 @@ antigen use oh-my-zsh
 
 antigen theme agnoster
 
+antigen bundle docker
 antigen bundle git
 antigen bundle sublime
 antigen bundle sudo
