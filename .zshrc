@@ -16,6 +16,7 @@ antigen bundle rupa/z
 
 if [[ $OS == "OSX" ]]; then
 	antigen bundle brew
+	antigen bundle brew-cask
 	antigen bundle osx
 fi
 
