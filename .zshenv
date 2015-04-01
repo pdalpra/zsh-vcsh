@@ -21,4 +21,4 @@ eval "$(jtools init -)"
 
 # Set PATH and env vars from jtools
 PATH=$PATH:$(jtools path)
-export M2_HOME=$(jtools maven home)
+eval "$(jtools maven home)"
