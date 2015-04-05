@@ -14,10 +14,12 @@ source $HOME/.bin/antigen/antigen.zsh
 PATH=/usr/local/sbin:$PATH # Homebrew
 PATH=$PATH:$HOME/.bin/jtools/bin
 PATH=$PATH:$HOME/.bin/jenv/bin
+PATH=$PATH:$HOME/.bin/docker-forward/bin
 
 # Init bash completion for tools based on basecamp/sub
 eval "$(jenv init -)"
 eval "$(jtools init -)"
+eval "$(docker-forward init -)"
 
 # Set PATH and env vars from jtools
 PATH=$PATH:$(jtools path)
