@@ -1,5 +1,10 @@
 skip_global_compinit=1
 
+enable_sub() {
+  PATH=$PATH:$HOME/.bin/$1/bin
+  eval "$($1 init -)"
+}
+
 # Required by Sphinx
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -12,19 +17,15 @@ eval "$(os-detect)"
 if [[ $OS == "OSX" ]]; then
   SHELL=/usr/local/bin/zsh
   eval "$(boot2docker shellinit 2> /dev/null)"
-  PATH=$PATH:$HOME/.bin/docker-forward/bin
-  eval "$(docker-forward init -)"
+  enable_sub docker-forward
 fi
 
 source $HOME/.bin/antigen/antigen.zsh
 
 PATH=/usr/local/sbin:$PATH # Homebrew
-PATH=$PATH:$HOME/.bin/jtools/bin
-PATH=$PATH:$HOME/.bin/jenv/bin
 
-# Init bash completion for tools based on basecamp/sub
-eval "$(jenv init -)"
-eval "$(jtools init -)"
+enable_sub jtools
+enable_sub jenv
 
 # Set PATH and env vars from jtools
 PATH=$PATH:$(jtools path)
