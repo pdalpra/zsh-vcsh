@@ -24,3 +24,6 @@ eval "$(docker-forward init -)"
 # Set PATH and env vars from jtools
 PATH=$PATH:$(jtools path)
 eval "$(jtools maven home)"
+
+# Set JAVA_HOME with currently selected JVM using jenv
+export JAVA_HOME=$(jenv javahome)
