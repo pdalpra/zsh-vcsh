@@ -1,5 +1,9 @@
 skip_global_compinit=1
 
+# Required by Sphinx
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 PATH=$PATH:$HOME/.scripts
 
 eval "$(os-detect)"
