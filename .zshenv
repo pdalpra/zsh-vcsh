@@ -16,7 +16,7 @@ eval "$(os-detect)"
 
 if [[ $OS == "OSX" ]]; then
   SHELL=/usr/local/bin/zsh
-  eval "$(boot2docker shellinit 2> /dev/null)"
+  eval "$(docker-machine env boot2docker-vm)"
   enable_sub docker-forward
 fi
 
