@@ -33,3 +33,6 @@ eval "$(jtools maven home)"
 
 # Set JAVA_HOME with currently selected JVM using jenv
 export JAVA_HOME=$(jenv javahome)
+
+# Clean up
+unset -f enable_sub
