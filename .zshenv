@@ -36,3 +36,5 @@ export JAVA_HOME=$(jenv javahome)
 
 # Clean up
 unset -f enable_sub
+
+[[ -f $HOME/.zsh-custom ]] && . $HOME/.zsh-custom
