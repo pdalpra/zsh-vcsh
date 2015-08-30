@@ -22,3 +22,5 @@ if [[ $OS == "OSX" ]]; then
 fi
 
 antigen apply
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
