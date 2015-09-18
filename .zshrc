@@ -12,7 +12,6 @@ antigen bundle sublime
 antigen bundle sudo
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
-antigen bundle github/hub etc/hub.zsh_completion
 antigen bundle rupa/z
 
 if [[ $OS == "OSX" ]]; then
