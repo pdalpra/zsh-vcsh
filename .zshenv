@@ -9,7 +9,7 @@ enable_sub() {
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-PATH=$PATH:$HOME/.scripts
+export PATH=/usr/local/bin:$PATH:$HOME/.scripts:/$HOME/.bin/diff-so-fancy
 
 # OS-specific configuration
 eval "$(os-detect)"
