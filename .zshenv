@@ -5,11 +5,15 @@ enable_sub() {
   eval "$($1 init -)"
 }
 
+export TERM="xterm-256color"
+
 # Required by Sphinx
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH=/usr/local/bin:$PATH:$HOME/.scripts:/$HOME/.bin/diff-so-fancy
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.scripts:$PATH
+export PATH=$HOME/.bin/diff-so-fancy:$PATH
 
 # OS-specific configuration
 eval "$(os-detect)"
