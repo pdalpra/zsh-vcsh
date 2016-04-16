@@ -1,0 +1,6 @@
+#!/bin/sh
+
+vpns=`nmcli c show --active | awk '{if($3 == "vpn") {print $1 }}' | tr '\n' ','`
+vpns="${vpns%?}"
+
+[ -n "${vpns}" ] && echo "${vpns}" || echo "None"
