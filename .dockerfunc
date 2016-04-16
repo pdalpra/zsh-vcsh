@@ -1,0 +1,13 @@
+aws() {
+	docker run --rm -ti \
+		-v "${HOME}/.aws":/root/.aws \
+		anigeo/awscli "${@}"
+}
+
+jq() {
+	docker run --rm -i \
+		-e TERM="xterm-256color" \
+		pdalpra/jq "${@}"
+}
+
+# vim: set filetype=sh :

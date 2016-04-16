@@ -4,7 +4,7 @@
 
 antigen use oh-my-zsh
 
-antigen theme agnoster
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
 antigen bundle docker
 antigen bundle git

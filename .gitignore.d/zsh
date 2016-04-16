@@ -5,3 +5,5 @@
 !/.zshrc
 !/.scripts
 !/.scripts/*
+!/.bullet-train
+!/.dockerfunc
