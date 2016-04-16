@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export DISPLAY=:0
+export XAUTHORITY=/home/pdalpra/.Xauthority
+
+function mirror() {
+  xrandr --output eDP1 --dpi 168 --output DP1 --mode 1920x1080 --scale 1.67x1.67
+}
+  
+function single() {
+  xrandr --output DP1 --off
+  xrandr --output eDP1 --dpi 168
+}
+   
+xrandr | grep "^DP1 connected" &> /dev/null && mirror || single
+i3-msg -q 'restart'
