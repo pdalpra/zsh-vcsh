@@ -1,6 +1,7 @@
 aws() {
 	docker run --rm -ti \
 		-v "${HOME}/.aws":/root/.aws \
+    -v "${PWD}":/root \
 		anigeo/awscli "${@}"
 }
 
