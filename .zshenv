@@ -36,7 +36,7 @@ eval "$(hub alias -s)"
 # Clean up
 unset -f enable_sub
 
-. $HOME/.dockerfunc
 . $HOME/.bullet-train
 
 [[ -f $HOME/.zsh-custom ]] && . $HOME/.zsh-custom
+[[ -f $HOME/.cargo/env ]]  && . $HOME/.cargo/env
