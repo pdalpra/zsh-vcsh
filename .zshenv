@@ -7,12 +7,9 @@ enable_sub() {
 
 export TERM="xterm-256color"
 
-# Required by Sphinx
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.scripts:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.bin/diff-so-fancy:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk/
 export M2_HOME=/opt/maven
