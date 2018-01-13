@@ -1,4 +1,4 @@
-BULLETTRAIN_PROMPT_ORDER=(status custom context dir aws go elixir git hg)
+BULLETTRAIN_PROMPT_ORDER=(status custom context dir aws go elixir git)
 BULLETTRAIN_PROMPT_ADD_NEWLINE=false
 BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_BG=cyan
