@@ -16,3 +16,6 @@ eval "$(hub alias -s)"
 
 [[ -f $HOME/.zsh-custom ]] && . $HOME/.zsh-custom
 [[ -f $HOME/.cargo/env ]]  && . $HOME/.cargo/env
+
+# Aliases
+alias mr_home="mr -d ~"
