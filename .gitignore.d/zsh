@@ -3,6 +3,7 @@
 !/.gitignore.d/zsh
 !/.zshenv
 !/.zshrc
+!/.zsh-aliases
 !/.scripts
 !/.scripts/*
 !/.bullet-train

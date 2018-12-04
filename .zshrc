@@ -15,4 +15,4 @@ antigen bundle rupa/z
 
 antigen apply
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.zsh-aliases
