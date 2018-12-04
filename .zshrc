@@ -15,4 +15,9 @@ antigen bundle rupa/z
 
 antigen apply
 
+[ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
+[ -f $HOME/.fzf.zsh    ] && source $HOME/.fzf.zsh
+[ -f $HOME/.nvm/nvm.sh ] && source $HOME/.nvm/nvm.sh
+[ -f $HOME/.cargo/env  ] && source $HOME/.cargo/env
+
 source ~/.zsh-aliases
