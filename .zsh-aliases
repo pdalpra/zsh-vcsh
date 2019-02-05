@@ -2,8 +2,10 @@ has_cmd() {
   command -v "$1" >/dev/null 2>&1
 }
 
-has_cmd mr && alias mr_home="mr -d ~"
-has_cmd thefuck && eval $(thefuck --alias)
-has_cmd bat && alias cat="bat"
-has_cmd exa && alias ls="exa"
-has_cmd rg  && alias grep="rg"
+has_cmd mr         && alias mr_home="mr -d ~"
+has_cmd thefuck    && eval $(thefuck --alias)
+has_cmd bat        && alias cat="bat"
+has_cmd bat        && alias rcat="bat -p"
+has_cmd exa        && alias ls="exa"
+has_cmd rg         && alias grep="rg"
+has_cmd prettyping && alias ping="prettyping --nolegend"
