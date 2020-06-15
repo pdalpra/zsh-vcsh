@@ -6,5 +6,5 @@
 !/.zsh-aliases
 !/.scripts
 !/.scripts/*
-!/.bullet-train
 !/.dockerfunc
+!/.p10k.zsh

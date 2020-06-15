@@ -12,5 +12,3 @@ export PATH=/usr/lib/go/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
 
 source $HOME/.bin/antigen/antigen.zsh
-
-. $HOME/.bullet-train
