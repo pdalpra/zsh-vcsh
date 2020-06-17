@@ -14,3 +14,6 @@ has_cmd dust       && alias du="dust"
 has_cmd hyperfine  && alias time="hyperfine"
 has_cmd licensor   && alias license="licensor"
 has_cmd ytop       && alias top="ytop"
+
+alias java_8='eval "$(cs java --jvm adopt:1.8 --env)"'
+alias java_11='eval "$(cs java --jvm adopt:1.11 --env)"'

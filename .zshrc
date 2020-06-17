@@ -23,12 +23,15 @@ antigen bundle rupa/z
 
 antigen apply
 
-[ -f $HOME/.p10k.zsh                  ] && source $HOME/.p10k.zsh
-[ -f $HOME/.zsh-custom                ] && source $HOME/.zsh-custom
-[ -f $HOME/.fzf.zsh                   ] && source $HOME/.fzf.zsh
-[ -f $HOME/.nvm/nvm.sh                ] && source $HOME/.nvm/nvm.sh
-[ -f $HOME/.cargo/env                 ] && source $HOME/.cargo/env
-[ -f $HOME/.sdkman/bin/sdkman-init.sh ] && source $HOME/.sdkman/bin/sdkman-init.sh
+[ -f $HOME/.p10k.zsh   ] && source $HOME/.p10k.zsh
+[ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
+[ -f $HOME/.fzf.zsh    ] && source $HOME/.fzf.zsh
+
+# nvm
+[ -f $HOME/.nvm/nvm.sh        ] && source $HOME/.nvm/nvm.sh
+[ -f $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
+
+# rustup
+[ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
 
 source ~/.zsh-aliases
-
