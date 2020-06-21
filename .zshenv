@@ -1,10 +1,3 @@
-autoload -Uz compinit
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit
-else
-	compinit -C
-fi;
-
 export TERM="xterm-256color"
 
 export GOPATH=~/go
@@ -20,4 +13,4 @@ export PATH=$GOPATH/bin:$PATH
 # Use Java 8 by default
 eval "$(cs java --jvm adopt:1.8 --env)"
 
-source $HOME/.bin/antigen/antigen.zsh
+source $HOME/.bin/zplug/init.zsh

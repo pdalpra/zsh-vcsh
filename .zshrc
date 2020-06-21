@@ -5,28 +5,31 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-###################
-#  Antigen setup  #
-###################
+#################
+#  zplug setup  #
+#################
 
-antigen use oh-my-zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-antigen theme romkatv/powerlevel10k
+zplug "robbyrussell/oh-my-zsh", use:"lib"
 
-antigen bundle cargo
-antigen bundle command-not-found
-antigen bundle fancy-ctrl-z
-antigen bundle httpie
-antigen bundle npm
-antigen bundle rustup
-antigen bundle sudo
-antigen bundle z
-antigen bundle zsh-interactive-cd
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-completions src
-antigen bundle git-extras
+zplug "romkatv/powerlevel10k", as:theme
 
-antigen apply
+zplug "plugins/cargo", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "plugins/fancy-ctrl-z", from:oh-my-zsh
+zplug "plugins/httpie", from:oh-my-zsh
+zplug "plugins/npm", from:oh-my-zsh
+zplug "plugins/rustup", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/z", from:oh-my-zsh
+zplug "plugins/zsh-interactive-cd", from:oh-my-zsh
+
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-completions"
+
+if ! zplug check; then zplug install; fi
+zplug load
 
 [ -f $HOME/.p10k.zsh   ] && source $HOME/.p10k.zsh
 [ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
