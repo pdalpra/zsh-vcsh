@@ -13,13 +13,18 @@ antigen use oh-my-zsh
 
 antigen theme romkatv/powerlevel10k
 
-antigen bundle docker
+antigen bundle cargo
+antigen bundle command-not-found
+antigen bundle fancy-ctrl-z
 antigen bundle httpie
+antigen bundle npm
+antigen bundle rustup
 antigen bundle sudo
+antigen bundle z
+antigen bundle zsh-interactive-cd
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
 antigen bundle git-extras
-antigen bundle rupa/z
 
 antigen apply
 

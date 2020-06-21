@@ -1,4 +1,9 @@
-skip_global_compinit=1
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+	compinit
+else
+	compinit -C
+fi;
 
 export TERM="xterm-256color"
 
