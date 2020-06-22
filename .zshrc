@@ -31,9 +31,8 @@ zplug "zsh-users/zsh-completions"
 if ! zplug check; then zplug install; fi
 zplug load
 
-[ -f $HOME/.p10k.zsh   ] && source $HOME/.p10k.zsh
-[ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
-[ -f $HOME/.fzf.zsh    ] && source $HOME/.fzf.zsh
+[ -f $HOME/.p10k.zsh ] && source $HOME/.p10k.zsh
+[ -f $HOME/.fzf.zsh  ] && source $HOME/.fzf.zsh
 
 # nvm
 [ -f $HOME/.nvm/nvm.sh        ] && source $HOME/.nvm/nvm.sh
@@ -43,3 +42,5 @@ zplug load
 [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
 
 source ~/.zsh-aliases
+
+[ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
