@@ -1,10 +1,10 @@
 *
 !/.gitignore.d
 !/.gitignore.d/zsh
+!/.zinit.zsh
 !/.zshenv
 !/.zshrc
 !/.zsh-aliases
 !/.scripts
 !/.scripts/*
-!/.dockerfunc
 !/.p10k.zsh
