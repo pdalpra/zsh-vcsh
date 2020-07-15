@@ -1,7 +1,9 @@
 source $HOME/.p10k.zsh
 
-# Theme
-zinit light-mode for ver'v1.11.0' romkatv/powerlevel10k
+# Theme + bind-gem-node
+zinit light-mode for \
+  ver'v1.11.0' romkatv/powerlevel10k \
+  zinit-zsh/z-a-patch-dl
 
 # Oh My Zsh
 zinit wait'1' lucid light-mode for \
@@ -34,3 +36,6 @@ zinit wait'' as'completion' lucid light-mode for \
 # Binaries
 zinit wait'' as'program' lucid light-mode for \
   ver'v1.3.0' pick'diff-so-fancy' so-fancy/diff-so-fancy
+
+# Packs
+zinit pack'binary+keys' for fzf
