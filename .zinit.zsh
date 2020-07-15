@@ -1,7 +1,7 @@
 source $HOME/.p10k.zsh
 
 # Theme
-zinit light romkatv/powerlevel10k
+zinit light-mode for ver'v1.11.0' romkatv/powerlevel10k
 
 # Oh My Zsh
 zinit wait'1' lucid light-mode for \
@@ -26,9 +26,9 @@ zinit wait'' lucid light-mode for \
 
 # Zsh completions
 zinit wait'' as'completion' lucid light-mode for \
-  OMZP::cargo \
-  OMZP::httpie \
-  OMZP::rustup \
+  OMZP::cargo/_cargo \
+  OMZP::httpie/_httpie \
+  OMZP::rustup/_rustup \
   zsh-users/zsh-completions
 
 # Binaries
