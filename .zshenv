@@ -1,5 +1,7 @@
 skip_global_compinit=1
 
+setopt autocd
+
 export TERM="xterm-256color"
 
 export GOPATH=$HOME/go
