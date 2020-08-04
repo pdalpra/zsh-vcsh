@@ -33,9 +33,5 @@ zinit wait'' as'completion' lucid light-mode for \
   OMZP::rustup/_rustup \
   zsh-users/zsh-completions
 
-# Binaries
-zinit wait'' as'program' lucid light-mode for \
-  ver'v1.3.0' pick'diff-so-fancy' so-fancy/diff-so-fancy
-
 # Packs
 zinit pack'binary+keys' for fzf
