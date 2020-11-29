@@ -15,3 +15,7 @@ fi
 source ~/.zsh-aliases
 
 [ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
+
+# sdkman
+export SDKMAN_DIR="/home/pdalpra/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
