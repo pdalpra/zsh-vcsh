@@ -17,3 +17,4 @@ has_cmd ytop       && alias top="ytop"
 
 alias java_8='eval "$(cs java --jvm adopt:1.8 --env)"'
 alias java_11='eval "$(cs java --jvm adopt:1.11 --env)"'
+alias graalvm='eval "$(cs java --jvm graalvm-java11:20.2 --env)"'
