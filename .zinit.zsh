@@ -1,9 +1,8 @@
 source $HOME/.p10k.zsh
 
-# Theme + bind-gem-node
+# Theme
 zinit light-mode for \
-  ver'v1.11.0' romkatv/powerlevel10k \
-  zinit-zsh/z-a-patch-dl
+  ver'v1.11.0' romkatv/powerlevel10k
 
 # Oh My Zsh
 zinit wait'1' lucid light-mode for \
@@ -32,6 +31,3 @@ zinit wait'' as'completion' lucid light-mode for \
   OMZP::httpie/_httpie \
   OMZP::rustup/_rustup \
   zsh-users/zsh-completions
-
-# Packs
-zinit pack'binary+keys' for fzf
