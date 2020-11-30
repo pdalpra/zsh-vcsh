@@ -5,11 +5,12 @@ setopt autocd
 export TERM="xterm-256color"
 
 export GOPATH=$HOME/go
+export COURSIER_BIN_DIR=$HOME/.bin/coursier
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.bin/dev-env:$PATH
 export PATH=$HOME/.bin/git-crypt:$PATH
-export PATH=$HOME/.local/share/coursier/bin:$PATH
+export PATH=$COURSIER_BIN_DIR:$PATH
 export PATH=/usr/lib/go/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
 
