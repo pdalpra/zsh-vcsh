@@ -1,5 +1,5 @@
 skip_global_compinit=1
-
+clear
 setopt autocd
 
 export TERM="xterm-256color"
@@ -19,3 +19,7 @@ eval "$(cs java --jvm adopt:1.8 --env)"
 
 source $HOME/.bin/zinit/zinit.zsh
 source $HOME/.zinit.zsh
+
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select

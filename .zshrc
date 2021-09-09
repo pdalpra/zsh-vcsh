@@ -5,20 +5,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # fzf
 [ -f $HOME/.fzf.zsh  ] && source $HOME/.fzf.zsh
-
 # nvm
 [ -f $HOME/.nvm/nvm.sh        ] && source $HOME/.nvm/nvm.sh
 [ -f $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
-
 # rustup
 [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
+# sdkman
 
 source ~/.zsh-aliases
-
 [ -f $HOME/.zsh-custom ] && source $HOME/.zsh-custom
 
-# sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
